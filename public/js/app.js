@@ -6,7 +6,7 @@ const paraTwo = document.querySelector('#para-two');
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const location = inputData.value;
-    const url = `http://localhost:9000/weather?address=${location}`;
+    const url = `/weather?address=${location}`;
 
     paraTwo.textContent = ''
     paraOne.textContent = "Loading ....."
